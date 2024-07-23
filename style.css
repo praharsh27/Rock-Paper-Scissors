@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #80ed99;
+}
+.navbar {
+    background-color: #22577a;
+    color: #fff;
+    font-size: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    height: 50px;
+}
+
+.Choice {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    flex-wrap: wrap; /* Allows wrapping of items */
+}
+
+.circle {
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.circle:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.score-board {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 25px;
+    height: 40px;
+    font-size: 26px;
+}
+#user-pts, #comp-pts {
+    font-size: 46px;
+}
+.message {
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+}
+.msg {
+    display: inline;
+    padding: 15px;
+    margin-top: 70px;
+    text-align: center;
+    border-radius: 20px;
+    border: #000;
+    background-color: #19647e;
+    color: #fff;
+    font-size: 26px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .Choice {
+        gap: 30px; /* Adjust gap for large screens */
+    }
+    .msg {
+        font-size: 22px; /* Adjust font size for message */
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 3vh; /* Increase font size for better readability */
+    }
+    .Choice {
+        gap: 20px; /* Adjust gap for medium screens */
+    }
+    .circle {
+        height: 140px;
+        width: 140px; /* Adjust circle size for medium screens */
+    }
+    img {
+        height: 130px;
+        width: 130px; /* Adjust image size for medium screens */
+    }
+    .score-board {
+        font-size: 22px; /* Adjust font size for scoreboard */
+    }
+    #user-pts, #comp-pts {
+        font-size: 36px; /* Adjust font size for points */
+    }
+    .msg {
+        font-size: 20px; /* Adjust font size for message */
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 4vh; /* Further increase font size for small screens */
+    }
+    .Choice {
+        gap: 10px; /* Adjust gap for small screens */
+    }
+    .circle {
+        height: 100px;
+        width: 100px; /* Adjust circle size for small screens */
+    }
+    img {
+        height: 90px;
+        width: 90px; /* Adjust image size for small screens */
+    }
+    .score-board {
+        font-size: 18px; /* Adjust font size for scoreboard */
+    }
+    #user-pts, #comp-pts {
+        font-size: 28px; /* Adjust font size for points */
+    }
+    .msg {
+        font-size: 18px; /* Adjust font size for message */
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+}
